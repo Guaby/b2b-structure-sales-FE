@@ -17,11 +17,11 @@ import { Chat } from './components/chat/Chat';
 
 function AppContent() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 transition-colors duration-200">
+    <div className="min-h-screen bg-white dark:bg-[#0F0F12] transition-colors duration-200">
       <div className="flex">
         <Sidebar />
 
-        <main className="flex-1 lg:ml-64">
+        <main className="flex-1 lg:pl-[17rem] w-full">
           <SimpleBar className="h-screen" autoHide={false}>
             <AnimatePresence mode="wait">
               <Routes>

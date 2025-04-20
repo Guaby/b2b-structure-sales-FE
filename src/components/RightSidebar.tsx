@@ -73,9 +73,10 @@ export function RightSidebar() {
         {/* Activities Section */}
         <div className="p-6">
           <h3 className="text-lg font-semibold text-gray-800 dark:text-white mb-4">Recent Activities</h3>
-          <div className="space-y-6">
+          <div className="space-y-4">
             {activities.map((activity, index) => (
-              <div key={index} className="flex items-start space-x-3">
+
+              <div key={index} className="flex items-start space-x-3 bg-red-200">
                 <div className={`${activity.iconColor} p-2 rounded-full`}>
                   <activity.icon className="w-4 h-4 text-white" />
                 </div>
@@ -86,6 +87,7 @@ export function RightSidebar() {
                   <p className="text-xs text-gray-500 dark:text-gray-400">{activity.timestamp}</p>
                 </div>
               </div>
+
             ))}
           </div>
         </div>

@@ -160,17 +160,17 @@ export function TeamPerformanceAlert({ members, onDismiss }: TeamPerformanceAler
   };
 
   return (
-    <div className="mb-8 bg-white dark:bg-gray-900 rounded-xl shadow-md overflow-hidden">
+    <div className="mb-4 bg-white dark:bg-[#121216] rounded-xl shadow-md overflow-hidden">
       <div 
-        className={`p-4 bg-gray-50 dark:bg-gray-800 cursor-pointer transition-colors ${
-          !isExpanded && 'hover:bg-gray-100 dark:hover:bg-gray-700'
+        className={`p-4 bg-gray-50 dark:bg-[#121216] cursor-pointer transition-colors ${
+          !isExpanded && 'hover:bg-gray-100 dark:hover:bg-[#19191E]'
         }`}
         onClick={() => setIsExpanded(!isExpanded)}
       >
         {/* Condensed View */}
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-4">
-            <div className="p-2 bg-blue-50 dark:bg-blue-500/10 rounded-lg">
+            <div className="p-2 bg-blue-50 dark:bg-[#121216] rounded-lg">
               <Users className="w-5 h-5 text-blue-600 dark:text-blue-400" />
             </div>
             <div>

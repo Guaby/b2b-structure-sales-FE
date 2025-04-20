@@ -110,48 +110,49 @@ export function Dashboard() {
   const [showTeamAlert, setShowTeamAlert] = React.useState(true);
 
   return (
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div className="main-grid mx-auto px-4 py-4">
       <Welcome 
-        name="Sarah Anderson"
-        role="Sales Manager"
+        name="Good Morning"
+        role="Alex Cedeño"
         avatar="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=250&h=250&auto=format&fit=crop"
       />
 
-      {showTeamAlert && (
+      {/* {showTeamAlert && (
         <TeamPerformanceAlert
           members={teamMembers}
           onDismiss={() => setShowTeamAlert(false)}
         />
-      )}
+      )} */}
 
-      <div className="grid grid-cols-1 xl:grid-cols-4 gap-8">
-        <div className="xl:col-span-3 space-y-8">
+      <div className="grid grid-cols-1 xl:grid-cols-4 gap-4">
+        
+        <div className="xl:col-span-3 space-y-4">
           {/* Stats Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 dark:bg-[#121216] p-4 rounded-xl ">
             <StatCard
-              title="Active Projects"
-              value="42"
+              title="Total Revenue"
+              value="$4.2M"
               trend={8.4}
               icon={Sun}
               route="/projects"
             />
             <StatCard
-              title="Active Employees"
-              value="28"
+              title="Total Profits"
+              value="$1.4M"
               trend={12.3}
               icon={Users}
               route="/team"
             />
             <StatCard
-              title="Active Tasks"
-              value="156"
+              title="Total Commisions"
+              value="$342k"
               trend={-4.2}
               icon={ClipboardList}
               route="/tasks"
             />
             <StatCard
-              title="Revenue"
-              value="$2.4M"
+              title="Total PRojects"
+              value="76P"
               trend={15.8}
               icon={DollarSign}
               route="/finance"
@@ -170,7 +171,7 @@ export function Dashboard() {
         </div>
 
         {/* Right Side Content */}
-        <div className="space-y-6">
+        <div className="space-y-4">
           {/* Activities Section */}
           <DashboardCard title="Recent Activities">
             <div className="space-y-6">
@@ -194,7 +195,7 @@ export function Dashboard() {
           <DashboardCard title="Upcoming Installations">
             <div className="space-y-4">
               {upcomingInstallations.map((install, index) => (
-                <div key={index} className="flex items-center justify-between p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                <div key={index} className="flex items-center justify-between p-4 bg-gray-50 dark:bg-[#18181D] rounded-lg">
                   <div className="flex items-center space-x-3">
                     <Calendar className="h-5 w-5 text-gray-400" />
                     <div>
